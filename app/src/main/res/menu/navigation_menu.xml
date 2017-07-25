@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_news"
+        android:title="News Updates" />
+
+    <item
+        android:id="@+id/nav_atms"
+        android:title="ATM Rates"/>
+
+    <item
+        android:id="@+id/nav_banks"
+        android:title="Banks Rates"/>
+
+</menu>
