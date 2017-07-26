@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".home" />
-        <activity android:name=".atm_rates"></activity>
+        <activity android:name=".atm_rates" />
+        <activity android:name=".news"></activity>
     </application>
 
 </manifest>

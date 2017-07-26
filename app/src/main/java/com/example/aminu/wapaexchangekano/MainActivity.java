@@ -174,6 +174,7 @@ implements NavigationView.OnNavigationItemSelectedListener {
         }
     }
 
+    //Navigation Drawer Control
     @Override
     public  boolean onNavigationItemSelected(MenuItem item){
         int id = item.getItemId();
