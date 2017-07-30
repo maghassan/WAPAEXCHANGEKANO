@@ -4,12 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,36 +16,32 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
-public class news extends Fragment {
+public class about extends AppCompatActivity {
 
     private RecyclerView mBlogList;
     FirebaseDatabase database;
     DatabaseReference myRef;
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState){
-        View rootView = inflater.inflate(R.layout.activity_news, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_about);
 
         //Recycler View
-        mBlogList = (RecyclerView)rootView.findViewById(R.id.newsList);
+        mBlogList = (RecyclerView)findViewById(R.id.postList);
         mBlogList.setHasFixedSize(true);
-        mBlogList.setLayoutManager(new LinearLayoutManager(this.getActivity()));
+        mBlogList.setLayoutManager(new LinearLayoutManager(this));
 
         // Send a Query to the database
         database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("News");
-
-
-        return rootView;
+        myRef = database.getReference("Data");
     }
 
     @Override
-    public void onStart() {
+    protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerAdapter<ModelClass, BlogViewHolder>
-                firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<ModelClass, BlogViewHolder>(
+        FirebaseRecyclerAdapter<ModelClass, BlogViewHolder> firebaseRecyclerAdapter =
+                new FirebaseRecyclerAdapter<ModelClass, BlogViewHolder>(
                         ModelClass.class,
                         R.layout.design_row,
                         BlogViewHolder.class,
@@ -58,7 +52,7 @@ public class news extends Fragment {
                     @Override
                     protected void populateViewHolder(BlogViewHolder viewHolder, ModelClass model,int position) {
                         viewHolder.setTitle(model.getTitle());
-                        viewHolder.setImage(getContext(), model.getImage());
+                        viewHolder.setImage(getApplicationContext(), model.getImage());
                     }
                 };
         mBlogList.setAdapter(firebaseRecyclerAdapter);
@@ -69,6 +63,15 @@ public class news extends Fragment {
         public BlogViewHolder(View itemView) {
             super(itemView);
             mView= itemView;
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://www.androidsquad.space/"));
+                    Intent browserChooserIntent = Intent.createChooser(browserIntent , "Choose browser of your choice");
+                    v.getContext().startActivity(browserChooserIntent);
+                }
+            });
         }
         public void setTitle(String title){
             TextView post_title = (TextView)mView.findViewById(R.id.titleText);

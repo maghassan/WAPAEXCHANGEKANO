@@ -2,15 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_news"
-        android:title="News Updates" />
+        android:id="@+id/nav_about"
+        android:title="About The App" />
 
     <item
-        android:id="@+id/nav_atms"
-        android:title="ATM Rates"/>
+        android:id="@+id/nav_share"
+        android:title="Tell a Friend"
+        android:icon="@drawable/ic_share_white_24dp"/>
 
     <item
-        android:id="@+id/nav_banks"
-        android:title="Banks Rates"/>
+        android:id="@+id/nav_feedback"
+        android:title="Feedback"
+        android:icon="@drawable/ic_feedback_white_24dp"/>
 
 </menu>

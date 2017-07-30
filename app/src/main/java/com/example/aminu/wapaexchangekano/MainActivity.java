@@ -171,14 +171,20 @@ implements NavigationView.OnNavigationItemSelectedListener {
     public  boolean onNavigationItemSelected(MenuItem item){
         int id = item.getItemId();
 
-        if (id == R.id.nav_news){
-            Intent a = new Intent(MainActivity.this, atm_rates.class);
+        if (id == R.id.nav_about){
+            Intent a = new Intent(MainActivity.this, about.class);
             startActivity(a);
 
-        } else if (id == R.id.nav_atms){
-            Intent b = new Intent(MainActivity.this, atm_rates.class);
-            startActivity(b);
-        }
+        } else if (id == R.id.nav_share){
+            String message = "Share button works jeje...";
+            Intent share = new Intent(Intent.ACTION_SEND);
+            share.setType("text/plain");
+            share.putExtra(Intent.EXTRA_TEXT, message);
+            startActivity(Intent.createChooser(share, "Share with your friends!"));
+        } else if (id == R.id.nav_feedback){
+            Intent f = new Intent(MainActivity.this, feedback.class);
+            startActivity(f);
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
         drawer.closeDrawer(GravityCompat.START);

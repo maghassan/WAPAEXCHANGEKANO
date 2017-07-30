@@ -22,9 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".home" />
-        <activity android:name=".atm_rates" />
+        <activity android:name=".about" />
         <activity android:name=".news" />
-        <activity android:name=".post"></activity>
+        <activity android:name=".feedback"></activity>
     </application>
 
 </manifest>
