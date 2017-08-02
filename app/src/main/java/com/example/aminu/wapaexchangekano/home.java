@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class home extends Fragment {
 
     TextView usbt1;
@@ -35,6 +38,34 @@ public class home extends Fragment {
     TextView eust3;
     TextView cnbt3;
     TextView cnst3;
+
+    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+    DatabaseReference usbt1Ref = mRootRef.child("usbt1");
+    DatabaseReference usst1Ref = mRootRef.child("usst1");
+    DatabaseReference ukbt1Ref = mRootRef.child("ukbt1");
+    DatabaseReference ukst1Ref = mRootRef.child("ukst1");
+    DatabaseReference eubt1Ref = mRootRef.child("eubt1");
+    DatabaseReference eust1Ref = mRootRef.child("eust1");
+    DatabaseReference cnbt1Ref = mRootRef.child("cnbt1");
+    DatabaseReference cnst1Ref = mRootRef.child("cnst1");
+
+    DatabaseReference usbt2Ref = mRootRef.child("usbt2");
+    DatabaseReference usst2Ref = mRootRef.child("usbt2");
+    DatabaseReference ukbt2Ref = mRootRef.child("ukbt2");
+    DatabaseReference ukst2Ref = mRootRef.child("ukst2");
+    DatabaseReference eubt2Ref = mRootRef.child("eubt2");
+    DatabaseReference eust2Ref = mRootRef.child("eust2");
+    DatabaseReference cnbt2Ref = mRootRef.child("cnbt2");
+    DatabaseReference cnst2Ref = mRootRef.child("cnst2");
+
+    DatabaseReference usbt3Ref = mRootRef.child("usbt3");
+    DatabaseReference usst3Ref = mRootRef.child("usbt3");
+    DatabaseReference ukbt3Ref = mRootRef.child("ukbt3");
+    DatabaseReference ukst3Ref = mRootRef.child("ukst3");
+    DatabaseReference eubt3Ref = mRootRef.child("eubt3");
+    DatabaseReference eust3Ref = mRootRef.child("eust3");
+    DatabaseReference cnbt3Ref = mRootRef.child("cnbt3");
+    DatabaseReference cnst3Ref = mRootRef.child("cnst3");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
