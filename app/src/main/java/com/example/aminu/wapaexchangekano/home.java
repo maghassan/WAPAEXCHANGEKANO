@@ -43,6 +43,30 @@ public class home extends Fragment {
 
         usbt1 = (TextView) rootView.findViewById(R.id.usbt1);
         usst1 = (TextView) rootView.findViewById(R.id.usst1);
+        ukbt1 = (TextView) rootView.findViewById(R.id.ukbt1);
+        ukst1 = (TextView) rootView.findViewById(R.id.ukst1);
+        eubt1 = (TextView) rootView.findViewById(R.id.eubt1);
+        eust1 = (TextView) rootView.findViewById(R.id.eust1);
+        cnbt1 = (TextView) rootView.findViewById(R.id.cnbt1);
+        cnst1 = (TextView) rootView.findViewById(R.id.cnst1);
+
+        usbt2 = (TextView) rootView.findViewById(R.id.usbt2);
+        usst2 = (TextView) rootView.findViewById(R.id.usst2);
+        ukbt2 = (TextView) rootView.findViewById(R.id.ukbt2);
+        ukst2 = (TextView) rootView.findViewById(R.id.ukst2);
+        eubt2 = (TextView) rootView.findViewById(R.id.eubt2);
+        eust2 = (TextView) rootView.findViewById(R.id.eust2);
+        cnbt2 = (TextView) rootView.findViewById(R.id.cnbt2);
+        cnst2 = (TextView) rootView.findViewById(R.id.cnst2);
+
+        usbt3 = (TextView) rootView.findViewById(R.id.usbt3);
+        usst3 = (TextView) rootView.findViewById(R.id.usst3);
+        ukbt3 = (TextView) rootView.findViewById(R.id.ukbt3);
+        ukst3 = (TextView) rootView.findViewById(R.id.ukst3);
+        eubt3 = (TextView) rootView.findViewById(R.id.eubt3);
+        eust3 = (TextView) rootView.findViewById(R.id.eust3);
+        cnbt3 = (TextView) rootView.findViewById(R.id.cnbt3);
+        cnst3 = (TextView) rootView.findViewById(R.id.cnst3);
 
         return rootView;
     }
