@@ -399,14 +399,14 @@
                     android:layout_height="20dp"
                     android:layout_alignBaseline="@+id/textvuk"
                     android:layout_alignBottom="@+id/textvuk"
-                    android:layout_alignLeft="@+id/ussp1t1"
-                    android:layout_alignStart="@+id/ussp1t1"
+                    android:layout_alignLeft="@+id/usst1"
+                    android:layout_alignStart="@+id/usst1"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/usbp1t1"
+                    android:id="@+id/usbt1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_alignBaseline="@+id/textvus"
@@ -418,14 +418,14 @@
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/ussp1t1"
+                    android:id="@+id/usst1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:text="N460"
                     android:textColor="#ffff"
                     android:textSize="15sp"
-                    android:layout_alignBaseline="@+id/usbp1t1"
-                    android:layout_alignBottom="@+id/usbp1t1"
+                    android:layout_alignBaseline="@+id/usbt1"
+                    android:layout_alignBottom="@+id/usbt1"
                     android:layout_alignLeft="@+id/imageView2"
                     android:layout_alignStart="@+id/imageView2" />
 
@@ -433,12 +433,12 @@
                     android:id="@+id/textView71"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/ussp1t1"
-                    android:layout_alignBottom="@+id/ussp1t1"
+                    android:layout_alignBaseline="@+id/usst1"
+                    android:layout_alignBottom="@+id/usst1"
                     android:layout_alignLeft="@+id/textView72"
                     android:layout_alignStart="@+id/textView72"
-                    android:layout_toEndOf="@+id/ussp1t1"
-                    android:layout_toRightOf="@+id/ussp1t1"
+                    android:layout_toEndOf="@+id/usst1"
+                    android:layout_toRightOf="@+id/usst1"
                     android:text="**"
                     android:textColor="#fff"
                     android:textColorHighlight="#fff"
@@ -524,8 +524,8 @@
                     android:layout_height="20dp"
                     android:layout_alignBaseline="@+id/textvuk"
                     android:layout_alignBottom="@+id/textvuk"
-                    android:layout_alignLeft="@+id/usbp1t1"
-                    android:layout_alignStart="@+id/usbp1t1"
+                    android:layout_alignLeft="@+id/usbt1"
+                    android:layout_alignStart="@+id/usbt1"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="15sp" />
