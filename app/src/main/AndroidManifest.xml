@@ -24,7 +24,8 @@
         <activity android:name=".home" />
         <activity android:name=".about" />
         <activity android:name=".news" />
-        <activity android:name=".feedback"></activity>
+        <activity android:name=".feedback" />
+        <activity android:name=".weekly"></activity>
     </application>
 
 </manifest>

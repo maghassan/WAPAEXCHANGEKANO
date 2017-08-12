@@ -28,7 +28,7 @@
 
 
             <TextView
-                android:id="@+id/date1"
+                android:id="@+id/date"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -45,9 +45,9 @@
                 android:id="@+id/imageView3"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
-                android:layout_alignLeft="@+id/date1"
-                android:layout_alignStart="@+id/date1"
-                android:layout_below="@+id/date1"
+                android:layout_alignLeft="@+id/date"
+                android:layout_alignStart="@+id/date"
+                android:layout_below="@+id/date"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/nflag" />
 
@@ -67,11 +67,11 @@
                 android:id="@+id/textView6"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/date1"
+                android:layout_alignTop="@+id/date"
                 android:layout_marginLeft="15dp"
                 android:layout_marginStart="15dp"
-                android:layout_toEndOf="@+id/date1"
-                android:layout_toRightOf="@+id/date1"
+                android:layout_toEndOf="@+id/date"
+                android:layout_toRightOf="@+id/date"
                 android:text="USA"
                 android:textSize="20sp"
                 android:textColor="@color/colorAccent"/>
@@ -269,7 +269,7 @@
 
 
                 <TextView
-                    android:id="@+id/date1"
+                    android:id="@+id/date"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -286,9 +286,9 @@
                     android:id="@+id/imageView3"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:layout_alignLeft="@+id/date1"
-                    android:layout_alignStart="@+id/date1"
-                    android:layout_below="@+id/date1"
+                    android:layout_alignLeft="@+id/date"
+                    android:layout_alignStart="@+id/date"
+                    android:layout_below="@+id/date"
                     android:layout_marginTop="10dp"
                     android:src="@drawable/nflag" />
 
@@ -308,11 +308,11 @@
                     android:id="@+id/textView6"
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/date1"
+                    android:layout_alignTop="@+id/date"
                     android:layout_marginLeft="15dp"
                     android:layout_marginStart="15dp"
-                    android:layout_toEndOf="@+id/date1"
-                    android:layout_toRightOf="@+id/date1"
+                    android:layout_toEndOf="@+id/date"
+                    android:layout_toRightOf="@+id/date"
                     android:text="USA"
                     android:textSize="20sp"
                     android:textColor="@color/colorAccent"/>

@@ -59,6 +59,6 @@
         android:layout_gravity="start"
         android:id="@+id/nav_view"
         app:itemTextColor="@color/colorAccent"
-        android:background="#495F5F">
+        android:background="#2b354e">
     </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>

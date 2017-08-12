@@ -5,11 +5,12 @@ package com.example.aminu.wapaexchangekano;
  */
 
 public class ModelClass {
-    String title, image;
+    String title, image, weekly_change;
 
-    public ModelClass(String title, String image) {
+    public ModelClass(String title, String image, String weekly_change) {
         this.title = title;
         this.image = image;
+        this.weekly_change = weekly_change;
     }
 
     public ModelClass() {
@@ -21,6 +22,13 @@ public class ModelClass {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getWeekly_change(){
+        return weekly_change;
+    }
+    public  String setWeekly_change(){
+        return weekly_change;
     }
 
     public String getImage() {

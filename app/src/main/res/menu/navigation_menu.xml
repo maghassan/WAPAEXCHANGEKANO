@@ -6,6 +6,10 @@
         android:title="About The App" />
 
     <item
+        android:id="@+id/nav_weekly"
+        android:title="Weekly Updates" />
+
+    <item
         android:id="@+id/nav_share"
         android:title="Tell a Friend"
         android:icon="@drawable/ic_share_white_24dp"/>

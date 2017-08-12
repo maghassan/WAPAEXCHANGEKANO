@@ -10,23 +10,44 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="match_parent"
         android:layout_margin="5dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="5dp"
         app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="#fff"
+            app:cardBackgroundColor="#2b354e"
             app:cardCornerRadius="5dp"
             app:cardElevation="5dp">
 
-        </android.support.v7.widget.CardView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/logo"
+                />
 
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="wapaFX is daily Naira exchange app. Get ATM rates, BDC rates and News.\n\nContact us at 08038537372 or Email us at wapafx@gmail.com.\n\nCopyright 2017 wapaFX, All Rights Reserved"/>
+
+        </LinearLayout>
     </android.support.v7.widget.CardView>
 
 </RelativeLayout>

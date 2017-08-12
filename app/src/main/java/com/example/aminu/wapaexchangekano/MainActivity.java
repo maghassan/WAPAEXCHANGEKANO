@@ -184,7 +184,11 @@ implements NavigationView.OnNavigationItemSelectedListener {
         } else if (id == R.id.nav_feedback){
             Intent f = new Intent(MainActivity.this, feedback.class);
             startActivity(f);
-    }
+        }
+        else if (id == R.id.nav_weekly){
+            Intent g = new Intent(MainActivity.this, weekly.class);
+            startActivity(g);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
         drawer.closeDrawer(GravityCompat.START);
