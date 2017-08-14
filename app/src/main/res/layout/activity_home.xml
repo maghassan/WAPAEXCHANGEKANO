@@ -322,19 +322,19 @@
                     android:layout_alignLeft="@+id/textView57"
                     android:layout_alignStart="@+id/textView57" />
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/cnft1"
-                    android:layout_width="20dp"
-                    android:layout_height="15dp"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@+id/euft1"
                     android:layout_alignLeft="@+id/ukft1"
+                    android:layout_alignRight="@+id/euft1"
                     android:layout_alignStart="@+id/ukft1"
                     android:layout_below="@+id/euft1"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/cnflag"
-                    android:layout_alignRight="@+id/euft1"
-                    android:layout_alignEnd="@+id/euft1" />
+                    android:src="@drawable/cnflag" />
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imageButton5"
                     android:layout_width="25dp"
                     android:layout_height="20dp"
@@ -344,7 +344,7 @@
                     android:layout_marginTop="10dp"
                     android:src="@drawable/cnflag" />
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imageButton7"
                     android:layout_width="25dp"
                     android:layout_height="20dp"

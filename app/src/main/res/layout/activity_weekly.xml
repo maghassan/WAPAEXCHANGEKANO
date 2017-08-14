@@ -1,5 +1,6 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -301,12 +302,12 @@
                     android:id="@+id/textveu"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignLeft="@+id/textvuk"
-                    android:layout_alignStart="@+id/textvuk"
-                    android:layout_alignTop="@+id/euft1"
                     android:text="EUR"
                     android:textColor="#ffaa00"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:layout_alignTop="@+id/euft1"
+                    android:layout_alignLeft="@+id/textvuk"
+                    android:layout_alignStart="@+id/textvuk" />
 
                 <TextView
                     android:id="@+id/textView46"
@@ -330,7 +331,7 @@
                     android:layout_alignLeft="@+id/textView57"
                     android:layout_alignStart="@+id/textView57" />
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/cnft1"
                     android:layout_width="25dp"
                     android:layout_height="20dp"
@@ -338,9 +339,10 @@
                     android:layout_alignStart="@+id/ukft1"
                     android:layout_below="@+id/euft1"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/cnflag" />
+                    android:src="@drawable/cnflag"
+                    app:srcCompat="@drawable/cnflag" />
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imageButton5"
                     android:layout_width="25dp"
                     android:layout_height="20dp"
@@ -348,9 +350,10 @@
                     android:layout_alignStart="@+id/imageView14"
                     android:layout_below="@+id/imageView14"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/cnflag" />
+                    android:src="@drawable/cnflag"
+                    app:srcCompat="@drawable/cnflag" />
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imageButton7"
                     android:layout_width="25dp"
                     android:layout_height="20dp"
@@ -358,7 +361,8 @@
                     android:layout_alignStart="@+id/imageView20"
                     android:layout_below="@+id/imageView20"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/cnflag" />
+                    android:src="@drawable/cnflag"
+                    app:srcCompat="@drawable/cnflag" />
 
                 <TextView
                     android:id="@+id/textvcn"
