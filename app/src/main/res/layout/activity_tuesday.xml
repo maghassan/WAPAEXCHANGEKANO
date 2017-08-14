@@ -80,8 +80,7 @@
                     android:layout_margin="5dp"
                     android:layout_toEndOf="@+id/date"
                     android:layout_toRightOf="@+id/date"
-                    android:background="@drawable/forward"
-                    android:onClick="nextday" />
+                    android:background="@drawable/forward" />
 
                 <TextView
                     android:id="@+id/date"
@@ -91,7 +90,7 @@
                     android:layout_alignBottom="@+id/pre"
                     android:layout_toEndOf="@+id/pre"
                     android:layout_toRightOf="@+id/pre"
-                    android:text="July, 07"
+                    android:text="July, 08"
                     android:textColor="#ffaa00"
                     android:textSize="15sp" />
 

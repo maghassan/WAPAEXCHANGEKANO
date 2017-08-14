@@ -132,7 +132,7 @@
                 <ImageView
                     android:id="@+id/usft1"
                     android:layout_width="25dp"
-                    android:layout_height="15dp"
+                    android:layout_height="20dp"
                     android:layout_alignLeft="@+id/pre"
                     android:layout_alignStart="@+id/pre"
                     android:layout_below="@+id/pre"
@@ -170,7 +170,8 @@
                     android:layout_toRightOf="@+id/usft1"
                     android:text="USD"
                     android:textColor="#ffaa00"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:layout_above="@+id/ukft1" />
 
                 <TextView
                     android:id="@+id/textView47"
@@ -197,7 +198,7 @@
                 <ImageView
                     android:id="@+id/ukft1"
                     android:layout_width="25dp"
-                    android:layout_height="15dp"
+                    android:layout_height="20dp"
                     android:layout_alignLeft="@+id/usft1"
                     android:layout_alignStart="@+id/usft1"
                     android:layout_below="@+id/usft1"
@@ -233,7 +234,8 @@
                     android:layout_alignStart="@+id/textvus"
                     android:text="GBP"
                     android:textColor="#ffaa00"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:layout_alignTop="@+id/ukft1" />
 
                 <TextView
                     android:id="@+id/textView48"
@@ -322,13 +324,15 @@
 
                 <ImageButton
                     android:id="@+id/cnft1"
-                    android:layout_width="25dp"
-                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
                     android:layout_alignLeft="@+id/ukft1"
                     android:layout_alignStart="@+id/ukft1"
                     android:layout_below="@+id/euft1"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/cnflag" />
+                    android:src="@drawable/cnflag"
+                    android:layout_alignRight="@+id/euft1"
+                    android:layout_alignEnd="@+id/euft1" />
 
                 <ImageButton
                     android:id="@+id/imageButton5"
